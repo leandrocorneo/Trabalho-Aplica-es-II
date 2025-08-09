@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokédex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Pokédex Wiki</h1>
+      <h1><i class="fas fa-dragon"></i>Pokédex Wiki</h1>
       <p>
         Aqui voce encontra todos os dados de qualquer pokemon que quiser!! Fique
         a vontade e pesquise o pokemón que voce deseja saber mais
@@ -17,12 +21,16 @@
 
     <main>
       <section class="search-section">
-        <input
-          type="text"
-          id="pokemon-input"
-          placeholder="Digite o nome do Pokémon"
-        />
-        <button id="search-button">Pesquisar</button>
+        <div class="search-container">
+          <input
+            type="text"
+            id="pokemon-input"
+            placeholder="Digite o nome ou numero do pokemon"
+          />
+          <button id="search-button">
+            <i class="fas fa-search"></i> Pesquisar
+          </button>
+        </div>
       </section>
 
       <section id="pokemon-section">
